@@ -1,0 +1,95 @@
+﻿<Page x:Class="AuthorApp.AddArticleWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuthorApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Додати статтю">
+
+    <Page.Resources>
+        <!-- Background Image -->
+        <ImageBrush x:Key="BackgroundImage" ImageSource="/pthotos/4к-картинки-на-рабочий-стол-скачать-бесплатно-29-1939066965.jpg" 
+                    Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center"/>
+
+        <!-- Common TextBox Style -->
+        <Style x:Key="CommonTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <EventSetter Event="GotFocus" Handler="RemovePlaceholderText"/>
+            <EventSetter Event="LostFocus" Handler="AddPlaceholderText"/>
+        </Style>
+
+        <!-- Common Button Style -->
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Save Button Style -->
+        <Style x:Key="SaveButtonStyle" BasedOn="{StaticResource ButtonStyle}" TargetType="Button">
+            <Setter Property="Background" Value="#4CAF50"/>
+        </Style>
+
+        <!-- Back Button Style -->
+        <Style x:Key="BackButtonStyle" BasedOn="{StaticResource ButtonStyle}" TargetType="Button">
+            <Setter Property="Background" Value="#D32F2F"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <ScrollViewer Margin="0" Background="{StaticResource BackgroundImage}" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20" VerticalAlignment="Top">
+                <!-- Grid for Form Fields -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Text Boxes -->
+                    <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Name="BrandBox" Text="Бренд" Tag="Бренд" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Name="ModelBox" Text="Модель" Tag="Модель" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Name="GenerationBox" Text="Покоління" Tag="Покоління" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Name="ProductionYearsBox" Text="Роки виробництва" Tag="Роки виробництва" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Name="BodyTypeBox" Text="Тип кузова" Tag="Тип кузова" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Name="EngineBox" Text="Двигун" Tag="Двигун" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Name="TransmissionBox" Text="Трансмісія" Tag="Трансмісія" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Name="WeightBox" Text="Вага" Tag="Вага" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Name="Image1Box" Text="URL зображення 1" Tag="URL зображення 1" Style="{StaticResource CommonTextBoxStyle}"/>
+                    <TextBox Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Name="Image2Box" Text="URL зображення 2" Tag="URL зображення 2" Style="{StaticResource CommonTextBoxStyle}"/>
+                </Grid>
+
+                <!-- Description Field -->
+                <TextBox Name="DescriptionBox" Margin="10" Text="Опис" Tag="Опис" Foreground="Gray" TextWrapping="Wrap" AcceptsReturn="True" 
+                         VerticalScrollBarVisibility="Auto" Background="White" MinHeight="100" Style="{StaticResource CommonTextBoxStyle}"/>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <Button Content="Зберегти" Click="SaveArticle" Width="100" Style="{StaticResource SaveButtonStyle}"/>
+                    <Button Content="Назад" Click="GoBack" Width="100" Style="{StaticResource BackButtonStyle}"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

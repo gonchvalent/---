@@ -1,0 +1,64 @@
+﻿<Page x:Class="AuthorApp.EditArticleWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuthorApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Редагувати статтю">
+
+    <Page.Resources>
+        <ImageBrush x:Key="BackgroundImage" ImageSource="/pthotos/ferrari-tyuning-serebryanyj-kolesa-osen-derevya-list-solnce-zelenyj-asfalt-439614377.jpg" Stretch="UniformToFill"/>
+        <Style x:Key="TextBoxStyle" TargetType="TextBox">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#4CAF50"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="DangerButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#D32F2F"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.Background>
+            <StaticResource ResourceKey="BackgroundImage"/>
+        </Grid.Background>
+        <ScrollViewer>
+            <StackPanel Margin="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ComboBox Name="BrandComboBox" Margin="10" SelectionChanged="BrandComboBox_SelectionChanged"/>
+
+                <ComboBox Name="ModelComboBox" Margin="10" SelectionChanged="ModelComboBox_SelectionChanged"/>
+
+                <TextBox Name="BrandBox" Style="{StaticResource TextBoxStyle}" Text="Бренд" Tag="Бренд" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="ModelBox" Style="{StaticResource TextBoxStyle}" Text="Модель" Tag="Модель" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="GenerationBox" Style="{StaticResource TextBoxStyle}" Text="Покоління" Tag="Покоління" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="ProductionYearsBox" Style="{StaticResource TextBoxStyle}" Text="Роки виробництва" Tag="Роки виробництва" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="BodyTypeBox" Style="{StaticResource TextBoxStyle}" Text="Тип кузова" Tag="Тип кузова" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="EngineBox" Style="{StaticResource TextBoxStyle}" Text="Двигун" Tag="Двигун" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="TransmissionBox" Style="{StaticResource TextBoxStyle}" Text="Трансмісія" Tag="Трансмісія" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="WeightBox" Style="{StaticResource TextBoxStyle}" Text="Вага" Tag="Вага" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="Image1Box" Style="{StaticResource TextBoxStyle}" Text="URL зображення 1" Tag="URL зображення 1" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="Image2Box" Style="{StaticResource TextBoxStyle}" Text="URL зображення 2" Tag="URL зображення 2" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+                <TextBox Name="DescriptionBox" Style="{StaticResource TextBoxStyle}" Text="Опис" Tag="Опис" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" GotFocus="RemovePlaceholderText" LostFocus="AddPlaceholderText"/>
+
+                <Button Content="Зберегти" Click="SaveArticle" Style="{StaticResource ButtonStyle}"/>
+                <Button Content="Назад" Click="GoBack" Style="{StaticResource DangerButtonStyle}" HorizontalAlignment="Right"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

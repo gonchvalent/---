@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="013c5eee4990075d3df5c7c9b20401c6-1456212046.jpg" />
+    <None Remove="1-4-33317396.jpg" />
+    <None Remove="1559021804_2-1384827923.jpg" />
+    <None Remove="csm_Batmobile-Wayne-Enterprises-Tumbler_19b62e8ff1-3111624356.jpg" />
+    <None Remove="ferrari-tyuning-serebryanyj-kolesa-osen-derevya-list-solnce-zelenyj-asfalt-439614377.jpg" />
+    <None Remove="letajuschij-avtomobil-kadr-iz-filma-garri-potter-i-tajnaja-komnata_rect_a3bf15c82c3d4eece0da9a88e4e0e429-3080393661.jpg" />
+    <None Remove="nastol.com.ua-366539-3270688761.jpg" />
+    <None Remove="pthotos\013c5eee4990075d3df5c7c9b20401c6-1456212046.jpg" />
+    <None Remove="th-1734965667.jpg" />
+    <None Remove="th-2119159054.jpg" />
+    <None Remove="th-684588360.jpg" />
+    <None Remove="Скачать-фото-машин-бесплатно-с-тюнингом-красивые-картинки019-2564942262.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1559021804_2-1384827923.jpg" />
+    <Resource Include="pthotos\013c5eee4990075d3df5c7c9b20401c6-1456212046.jpg" />
+    <Resource Include="pthotos\1-4-33317396.jpg" />
+    <Resource Include="pthotos\1559021804_2-1384827923.jpg" />
+    <Resource Include="pthotos\4к-картинки-на-рабочий-стол-скачать-бесплатно-29-1939066965.jpg" />
+    <Resource Include="pthotos\csm_Batmobile-Wayne-Enterprises-Tumbler_19b62e8ff1-3111624356.jpg" />
+    <Resource Include="pthotos\ferrari-tyuning-serebryanyj-kolesa-osen-derevya-list-solnce-zelenyj-asfalt-439614377.jpg" />
+    <Resource Include="pthotos\letajuschij-avtomobil-kadr-iz-filma-garri-potter-i-tajnaja-komnata_rect_a3bf15c82c3d4eece0da9a88e4e0e429-3080393661.jpg" />
+    <Resource Include="pthotos\nastol.com.ua-366539-3270688761.jpg" />
+    <Resource Include="pthotos\th-1734965667.jpg" />
+    <Resource Include="pthotos\th-2119159054.jpg" />
+    <Resource Include="pthotos\th-684588360.jpg" />
+    <Resource Include="pthotos\Скачать-фото-машин-бесплатно-с-тюнингом-красивые-картинки019-2564942262.jpg" />
+    <Resource Include="th-1734965667.jpg" />
+  </ItemGroup>
+
+</Project>

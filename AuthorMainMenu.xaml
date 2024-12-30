@@ -1,0 +1,75 @@
+﻿<Page x:Class="AuthorApp.AuthorMainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Головне меню автора">
+
+    <Page.Resources>
+        <!-- Фон -->
+        <ImageBrush x:Key="BackgroundImage" ImageSource="/pthotos/th-2119159054.jpg" Stretch="UniformToFill"/>
+
+        <!-- Загальний стиль для кнопок -->
+        <Style x:Key="MainButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#4CAF50"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="10" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#45A049"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#2E7D32"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Стиль для кнопки виходу -->
+        <Style x:Key="ExitButtonStyle" TargetType="Button" BasedOn="{StaticResource MainButtonStyle}">
+            <Setter Property="Background" Value="#D32F2F"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#C62828"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#B71C1C"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <!-- Фон для всього Grid -->
+        <Grid.Background>
+            <StaticResource ResourceKey="BackgroundImage"/>
+        </Grid.Background>
+
+        <!-- Основний контент -->
+        <StackPanel VerticalAlignment="Center">
+            <Button Content="Редагувати автомобілі" Click="GoToEditCarsSection" Style="{StaticResource MainButtonStyle}"/>
+            <Button Content="Редагувати відеозаписи" Click="GoToEditVideosSection" Style="{StaticResource MainButtonStyle}"/>
+            <Button Content="Вихід" Click="ExitApplication" Style="{StaticResource ExitButtonStyle}"/>
+        </StackPanel>
+    </Grid>
+</Page>

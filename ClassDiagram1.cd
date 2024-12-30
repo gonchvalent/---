@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AuthorApp.AddArticleWindow" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAQBAAAAAAAEAAAAAAAIAAAA=</HashCode>
+      <FileName>AddArticleWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.AddVideoWindow" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAgAAABAAAAAAAEAAAAAAAIAQAA=</HashCode>
+      <FileName>AddVideoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.App">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.AuthorMainMenu" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AuthorMainMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.Car">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAQAAgAAAAAAAAAAAAICAAAAAABAgAACABgBA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.DataManager">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MIIQAAAAAwAAAABIAAAAAAAABAAgEIAABEAACIAAQAA=</HashCode>
+      <FileName>DataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.DeleteArticleWindow" BaseTypeListCollapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAwAAAAAAAABAAACAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>DeleteArticleWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.DeleteVideoWindow" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAEAEAAAAAAAAACAA=</HashCode>
+      <FileName>DeleteVideoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.EditArticleWindow" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQwAAAAABAAAAAACAAQBAAAAAAAEAAAAAAgIgAAA=</HashCode>
+      <FileName>EditArticleWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.EditCarsSection" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAABAA=</HashCode>
+      <FileName>EditCarsSection.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.EditVideosSection" BaseTypeListCollapsed="true">
+    <Position X="10" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAgAAAAAAAAEQAAAAA=</HashCode>
+      <FileName>EditVideosSection.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.EditVideoWindow" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAABAAIAQEAEAAAAAAgIASAA=</HashCode>
+      <FileName>EditVideoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_selectedVideo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AuthorApp.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuthorApp.Video">
+    <Position X="8" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAEAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Video.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
